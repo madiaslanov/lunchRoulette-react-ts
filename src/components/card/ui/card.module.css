@@ -1,0 +1,182 @@
+
+
+.cardHolder {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    min-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    background: url("../../../images/card.png");
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+}
+
+.cardHolder a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.cardHolder:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cardHolder img {
+    width: 180px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.description h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    font-size: 14px;
+    margin: 0;
+    color: #878787;
+    font-weight: 400;
+}
+
+.description h2 {
+    margin: 0;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 200px;
+    font-size: 20px;
+}
+
+.cardRating span {
+    color: #FFFFFF;
+}
+
+.descTitle {
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    color: #FFFFFF;
+}
+
+.cardBtn {
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    font-weight: 550;
+    cursor: pointer;
+    background: none;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.cardRating {
+    display: flex;
+    padding: 5px 10px;
+    align-items: start;
+    gap: 10px;
+    color: #FFFFFF;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 20%;
+    max-width: 800px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: start;
+}
+
+.modalContent h2 {
+    margin-bottom: 15px;
+}
+
+.modalContent p {
+    margin-bottom: 20px;
+}
+
+.modalContent button {
+    padding: 10px 20px;
+    background-color: #ff5757;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modalContent img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+@media (max-width: 788px) {
+    .cardHolder {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        max-width: 150px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        margin: 5px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+        background: url("../../../images/card.png");
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        padding: 20px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .modalContent {
+        width:60%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .modalContent {
+        width:50%;
+    }
+}

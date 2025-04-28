@@ -1,0 +1,1 @@
+export const baseURL = 'https://lunchroulette-nodejs-production.up.railway.app/api/v1';

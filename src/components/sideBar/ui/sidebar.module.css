@@ -1,0 +1,12 @@
+.sideBar {
+    width: 20%;
+    min-width: 250px;
+    max-width: 400px;
+    height: 50vh;
+    text-align: center;
+    color: #E9BD8C;
+}
+
+.sideBar h2{
+    font-family: "Sansita Swashed", sans-serif;
+}

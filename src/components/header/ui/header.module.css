@@ -1,0 +1,53 @@
+.holder {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    padding: 20px;
+    color: #F5F5F5;
+    position: absolute;
+    padding-left: 100px;
+    padding-top: 35px;
+}
+
+.logoHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 20px;
+}
+.logoHeader h2{
+    color: #FAFAFA;
+    font-family: "Inknut Antiqua", serif;
+}
+
+.logoHeader img {
+    width: 50px;
+    height: 50px;
+    transition: opacity 100ms ease-in;
+}
+
+.listHead {
+    display: flex;
+    gap: 30px;
+    font-size: 22px;
+    color: #F5F5F5;
+    font-weight: 500;
+}
+
+.listHead span {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.listHead .active {
+    color: #E9BD8C;
+    font-weight: bold;
+}
+
+
+@media (max-width: 748px) {
+    .holder{
+        padding: 20px 30px 0 20px;
+    }
+}
