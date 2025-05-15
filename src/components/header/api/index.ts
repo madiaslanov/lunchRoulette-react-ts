@@ -6,6 +6,7 @@ export const postAiApi = async (prompt: string) => {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'credentials': 'include',
             },
             body: JSON.stringify({ prompt }),
         });
@@ -15,8 +16,8 @@ export const postAiApi = async (prompt: string) => {
         }
 
         const data = await response.json();
-        console.log('Data received from server:', data); // логируем ответ от сервера
-        return data.reply; // возвращаем только поле `reply` из ответа
+        console.log('Data received from server:', data);
+        return data.reply;
     } catch (error) {
         console.error(error);
         throw new Error('Ошибка при получении ответа');
